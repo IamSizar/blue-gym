@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title">هۆلا وەرزشی یا بلۆ | Blue Gym - بەهێزترین هۆلا لەشجوانیێ</title>
+  <link rel="preload" href="fonts/Kurdfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-logo">BG</div>
+          <div class="brand-text">
+            <h1>BLUE GYM</h1>
+            <span data-i18n="brand_tagline">هۆلا وەرزشی یا بلۆ • بادینان</span>
+          </div>
+        </a>
+
+        <nav class="nav-main" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#hero" class="active" data-i18n="nav_home">دەستپێک</a></li>
+            <li><a href="#services" data-i18n="nav_services">خزمەتگوزاری</a></li>
+            <li><a href="#schedule" data-i18n="nav_schedule">دەمێن دەوامی</a></li>
+            <li><a href="#pricing" data-i18n="nav_pricing">بها و ئۆفەر</a></li>
+            <li><a href="#diet-bar" data-i18n="nav_diet">مێنیویا دایت</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher: Kurdish Badini / Arabic -->
+          <div class="lang-switcher" id="langSwitcher">
+            <button type="button" class="lang-btn active" data-lang="ku">بادینی</button>
+            <button type="button" class="lang-btn" data-lang="ar">عربي</button>
+          </div>
+
+          <a href="tel:07509908866" class="nav-icon-btn nav-phone" dir="ltr" title="0750 990 8866" aria-label="0750 990 8866">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+            <span class="nav-phone-num">0750 990 8866</span>
+          </a>
+
+          <a href="admin.html" class="nav-icon-btn nav-admin" title="Admin CMS" aria-label="Admin CMS">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z"/>
+            </svg>
+          </a>
+
+          <a href="#register" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_join_btn">تۆماربوون</a>
+
+          <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+        <ul class="mobile-links">
+          <li><a href="#hero" class="active" data-i18n="nav_home">دەستپێک</a></li>
+          <li><a href="#services" data-i18n="nav_services">خزمەتگوزاری</a></li>
+          <li><a href="#schedule" data-i18n="nav_schedule">دەمێن دەوامی</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">بها و ئۆفەر</a></li>
+          <li><a href="#diet-bar" data-i18n="nav_diet">مێنیویا دایت</a></li>
+          <li><a href="#register" data-i18n="nav_register">ناڤنڤیسین</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <div class="lang-switcher mobile-lang">
+            <button type="button" class="lang-btn active" data-lang="ku">بادینی</button>
+            <button type="button" class="lang-btn" data-lang="ar">عربي</button>
+          </div>
+          <a href="tel:07509908866" class="btn btn-outline btn-sm" dir="ltr">0750 990 8866</a>
+          <a href="admin.html" class="btn btn-outline btn-sm" data-i18n="nav_admin">کارگێری (Admin CMS)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge badge-spray" data-i18n="hero_badge_1">🔥 بهێزترین هۆلا لەشجوانیێ</span>
+          <span class="badge badge-clean" data-i18n="hero_badge_2">⚡ ئامیرێن سەردەمیانە ٢٠٢٦</span>
+          <span class="badge badge-offer" data-i18n="hero_badge_3">🏆 ئۆفەرا تایبەت یا هەیڤانە</span>
+        </div>
+        <h2 data-i18n="hero_title">
+          هێز، لەشجوانی و تەندروستی دگەل <span class="text-primary">بلۆ جیم</span>
+        </h2>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          هۆلا بلۆ جیم ژینگەهەکا نموونەیی یە بۆ وان هەمی کەسێن دڤێت لەشەکێ ڕێک و ماسوولکەیێن بهێز ئاڤا بکەن. دگەل سەردەمیانەترین ئامیرێن وەرزشی و باشترین ڕاهێنەرێن باوەرپێکری.
+        </p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#register" class="btn btn-primary" data-i18n="hero_cta_register">
+            ناڤێ خۆ نۆکە تۆمار بکە 🚀
+          </a>
+          <a href="#pricing" class="btn btn-outline" data-i18n="hero_cta_pricing">
+            پلان و بهایێن هەیڤانە 💳
+          </a>
+          <a href="https://wa.me/9647509908866" target="_blank" class="btn btn-clean" dir="ltr" style="font-weight: 700;">
+            💬 0750 990 8866
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <h3>30,000</h3>
+            <p data-i18n="stat_monthly_label">دینار بەشداریا هەیڤانە</p>
+          </div>
+          <div class="stat-box">
+            <h3 class="text-cyan">+120</h3>
+            <p data-i18n="stat_machines_label">ئامیرێن مۆدێرن یێن وەرزشێ</p>
+          </div>
+          <div class="stat-box">
+            <h3 class="text-gold">100%</h3>
+            <p data-i18n="stat_trainers_label">ڕاهێنەرێن پسپۆڕ و باوەرپێکری</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card: Special Offer Callout Banner -->
+      <div class="hero-visual">
+        <div class="special-offer-banner" style="margin: 0;">
+          <div class="offer-info">
+            <span class="badge badge-offer" style="margin-bottom: 0.75rem;" data-i18n="offer_badge">ئۆفەرا بهێز یا دەمەکی</span>
+            <h3 id="offerBannerTitle" data-i18n="offer_title">٣ هەیڤان بەشدار ببە، هەیڤا ٤ ب تنێ ب ٢٥,٠٠٠ دیناران!</h3>
+            <p id="offerBannerDesc" data-i18n="offer_desc">
+              دەلیڤەیەکا زێڕین بۆ وەرزشڤانان! ئەگەر هین بۆ دەمێ ٣ هەیڤان ناڤێ خۆ تۆمار بکەن، هەیڤا چوارێ بتنێ ب نیڤا بهایی (٢٥,٠٠٠ دینار) دێ وەرگرن.
+            </p>
+          </div>
+          <div class="offer-price-tag">
+            <div class="old" data-i18n="offer_old">30,000 دینار</div>
+            <div class="new" id="offerMonth4Price" data-i18n="offer_new">25,000 دینار</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES & FACILITIES ==================== -->
+  <section id="services" class="services-section" style="padding: 4.5rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-spray" data-i18n="services_badge">خزمەتگوزاریێن تایبەت</span>
+        <h2 data-i18n="services_title">چ هەیە ل هۆلا <span class="text-primary">بلۆ جیم</span>؟</h2>
+        <p data-i18n="services_subtitle">مە هەمی تشت ئامادە کریە دا کو هین ب باشترین شێواز ڕاهێنانێن خۆ ئەنجام بدەن</p>
+      </div>
+
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.75rem; margin-top: 3rem;">
+        <!-- Card 1 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🏋️‍♂️</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_1_title">ئامیرێن قورس و هەمەجۆر</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="service_1_desc">
+            ئامیرێن ستاندەرد یێن جیهانی بۆ هەمی ماسوولکەیێن لەشی (سنگ، پشت، پێ، دەست و مل).
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🏃‍♂️</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_2_title">بەشێ کاردیۆ و فیتنێسێ</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="service_2_desc">
+            ئامیرێن بەزینێ (Treadmill)، پایسکلێن ئەلیکترۆنی، و ئامیرێن شوتینێ بۆ کێمکرنا دوهنیاتان.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">📋</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_3_title">ڕاهێنەرێن تایبەت و خۆراک</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="service_3_desc">
+            دانانا پڕۆگرامێن وەرزشی یێن تایبەت و خشتەیێ خۆراکی ل دیڤ شیان و ئارمانجا تە.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🚿</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_4_title">حەمام، ساونا و پاکوخاوێنی</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="service_4_desc">
+            خاوێنترین گەرمئاڤ و سۆنایا هێورکەرەوە دگەل لۆکەرێن تایبەت و تەناهی بۆ هەر ئەندامەکی.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🥤</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_5_title">بارێ دایت و ڤەخوارنێن تەندروست</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="service_5_desc">
+            بەشێ تایبەتێ شەیك و خۆراکێن دایت یێن کێم کالۆری و بێ شەکر پشتی هەر ڕاهێنانەکێ.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; transition: var(--transition);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">⏰</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="service_6_title">دەمێن دەواما هۆلێ</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;" data-i18n="service_6_desc">
+            🌸 <strong>ئافرەتان:</strong> ٠٦:٠٠ سپێدێ هەتا ٠٢:٠٠ نیڤڕۆ<br>
+            ⚡ <strong>زەلامان:</strong> ٠٣:٠٠ ئێڤاری هەتا ١١:٠٠ شەڤێ
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GYM SCHEDULE & TIMINGS ==================== -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-spray" data-i18n="schedule_badge">⏰ دەمژمێرێن کارکردنێ</span>
+        <h2 data-i18n="schedule_title">خشتەیێ دەوامێ د هۆلا <span class="text-primary">بلۆ جیم</span> دا</h2>
+        <p data-i18n="schedule_subtitle">دەمێن تایبەت بۆ خانمان و پیاوان ب جودا، بۆ دابینکرنا ژینگەهەکا ئارام و وەرزشی یا پێشکەفتی</p>
+      </div>
+
+      <!-- Real-time Live Status Bar -->
+      <div class="schedule-live-bar" id="gymLiveStatusBar">
+        <span class="pulse-dot" id="livePulseDot"></span>
+        <span class="live-text" id="liveStatusText">دۆخێ نوکە: بارکرنا زانیاریێن دەوامی...</span>
+      </div>
+
+      <!-- Schedule Cards Grid -->
+      <div class="schedule-grid">
+        <!-- Women's Shift -->
+        <div class="schedule-card women-card" id="womenShiftCard">
+          <div class="schedule-card-header">
+            <div class="schedule-card-icon">🌸</div>
+            <span class="badge badge-women" data-i18n="women_badge">شیفتا خانمان (ئافرەتان)</span>
+          </div>
+
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="women_title">دەواما ئافرەتان</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="women_desc">
+            ژینگەهەکا ب تەمامی تایبەت، ئارام و پاراستی دگەل ڕاهێنەرێن ئافرەت یێن باوەرپێکری.
+          </p>
+
+          <div class="schedule-time-box">
+            <div>
+              <div class="time-main" id="womenTimeDisplay">06:00 سپێدێ - 02:00 نیڤڕۆ</div>
+              <div class="time-duration" data-i18n="women_duration">٨ دەمژمێرێن بەردەوام (06:00 AM - 02:00 PM)</div>
+            </div>
+            <div style="font-size: 1.7rem;">☀️</div>
+          </div>
+
+          <ul class="schedule-features">
+            <li data-i18n="women_f1">
+              <svg width="18" height="18" fill="#EC4899" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ڕاهێنەرێن ئافرەت یێن پسپۆڕ و باوەرپێکری
+            </li>
+            <li data-i18n="women_f2">
+              <svg width="18" height="18" fill="#EC4899" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              بەشێ کاردیۆ، فیتنێس و بەرنامەیێن دابەزاندنا کێشێ
+            </li>
+            <li data-i18n="women_f3">
+              <svg width="18" height="18" fill="#EC4899" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              تایبەتمەندی و ئاسوودەییا تەمام بۆ خانمان
+            </li>
+            <li data-i18n="women_f4">
+              <svg width="18" height="18" fill="#EC4899" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              حەمام و سۆنایا تایبەت و پاقژ
+            </li>
+          </ul>
+
+          <a href="#register" class="btn btn-outline" style="width: 100%; border-color: rgba(236, 72, 153, 0.4); color: #F472B6;" data-i18n="women_btn">
+            ناڤنڤیسین د دەواما ئافرەتان دا 🌸
+          </a>
+        </div>
+
+        <!-- Men's Shift -->
+        <div class="schedule-card men-card" id="menShiftCard">
+          <div class="schedule-card-header">
+            <div class="schedule-card-icon">⚡</div>
+            <span class="badge badge-men" data-i18n="men_badge">شیفتا زەلامان (پیاوان)</span>
+          </div>
+
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: #fff;" data-i18n="men_title">دەواما زەلامان</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="men_desc">
+            ئامیرێن پێشکەفتی، کەشوهەوایێ پڕ وزە، و ڕاهێنەرێن شارەزا د بوارێ لەشجوانی و هێزێ دا.
+          </p>
+
+          <div class="schedule-time-box">
+            <div>
+              <div class="time-main" id="menTimeDisplay">03:00 ئێڤاری - 11:00 شەڤێ</div>
+              <div class="time-duration" data-i18n="men_duration">٨ دەمژمێرێن بەردەوام (03:00 PM - 11:00 PM)</div>
+            </div>
+            <div style="font-size: 1.7rem;">🌙</div>
+          </div>
+
+          <ul class="schedule-features">
+            <li data-i18n="men_f1">
+              <svg width="18" height="18" fill="var(--primary-light)" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ڕاهێنەرێن پسپۆڕ بۆ ماسوولکەسازی و پاوەرلیفتینگ
+            </li>
+            <li data-i18n="men_f2">
+              <svg width="18" height="18" fill="var(--primary-light)" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              بەشێ کێشێن گران (Heavy Free Weights & Dumbbells)
+            </li>
+            <li data-i18n="men_f3">
+              <svg width="18" height="18" fill="var(--primary-light)" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              بارێ دایت و شەیكێن فرێش و بەهێزکەر
+            </li>
+            <li data-i18n="men_f4">
+              <svg width="18" height="18" fill="var(--primary-light)" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              سیستەمێ دەنگی و مۆسیقا ب مۆڕالێ بەرز
+            </li>
+          </ul>
+
+          <a href="#register" class="btn btn-primary" style="width: 100%;" data-i18n="men_btn">
+            ناڤنڤیسین د دەواما زەلامان دا ⚡
+          </a>
+        </div>
+      </div>
+
+      <!-- Cleaning & Handover Banner -->
+      <div class="schedule-cleaning-notice">
+        <div>
+          <strong data-i18n="cleaning_notice_title">🧹 دەمژمێرا پاقژکرن و ئامادەکاریێ (02:00 نیڤڕۆ – 03:00 ئێڤاری):</strong>
+          <span style="color: var(--text-muted); margin-right: 0.5rem;" data-i18n="cleaning_notice_desc">
+            د ڤێ دەمژمێرێ دا هۆل دهێتە پاقژکرن، تەعقیمکرن و ئامادەکرن ژ لایێ تیمێ کارگێریێ ڤە بۆ پاراستنا ساخلەمیا هەوە.
+          </span>
+        </div>
+        <span class="badge badge-offer" data-i18n="cleaning_badge">١ دەمژمێر تەعقیمکرن</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING & MEMBERSHIP PLANS ==================== -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-offer" data-i18n="pricing_badge">بها و بەشداری</span>
+        <h2 data-i18n="pricing_title">پلانێن بەشداریێ یێن <span class="text-primary">بلۆ جیم</span></h2>
+        <p data-i18n="pricing_subtitle">باشترین بها و گونجایترین ئۆفەر بۆ تەندروستیا تە و ئاڤاکرنا لەشەکێ بهێز</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- 1 Month Standard Plan -->
+        <div class="pricing-card">
+          <h3 class="plan-name" data-i18n="plan_1_name">بەشداریا ئێک هەیڤ</h3>
+          <p class="plan-desc" data-i18n="plan_1_desc">گونجایە بۆ کەسێن نوی و وان یێن دڤێت ڕاهێنانێن خۆ تاقی بکەن.</p>
+          <div class="plan-price-wrap">
+            <span class="price-amount" id="priceMonthly">30,000</span>
+            <span class="price-currency" data-i18n="currency">دینار</span>
+            <span class="price-period" data-i18n="plan_1_period">بۆ دەمێ ١ هەیڤ</span>
+          </div>
+          <ul class="plan-features">
+            <li data-i18n="plan_1_f1">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              هەمی ئامیرێن لەشجوانیێ و فیتنێسێ
+            </li>
+            <li data-i18n="plan_1_f2">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              خزمەتگوزاریا گەرمئاڤێ و حەمامێ
+            </li>
+            <li data-i18n="plan_1_f3">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ڕێبەریا سەرەتایی ژ لایێ ڕاهێنەری ڤە
+            </li>
+          </ul>
+          <a href="#register" class="btn btn-outline" style="width: 100%;" data-i18n="plan_1_btn">ناڤنڤیسین د ڤێ پلانێ دا</a>
+        </div>
+
+        <!-- SPECIAL OFFER: 3 MONTHS + 4TH MONTH FOR 25,000 IQD -->
+        <div class="pricing-card featured">
+          <div class="card-ribbon" data-i18n="plan_2_ribbon">⭐ ئۆفەرا بهێز یا تایبەت</div>
+          <h3 class="plan-name text-cyan" data-i18n="plan_2_name">ئۆفەرا ٣ هەیڤ + هەیڤا ٤</h3>
+          <p class="plan-desc" data-i18n="plan_2_desc">٣ هەیڤان بەشدار ببە، هەیڤا ٤ ب تنێ ب ٢٥,٠٠٠ دیناران وەربگرە!</p>
+          <div class="plan-price-wrap">
+            <span class="price-amount text-gold">175,000</span>
+            <span class="price-currency" data-i18n="currency">دینار</span>
+            <span class="price-period" data-i18n="plan_2_period">بۆ ٤ هەیڤان ب تەمامی (پاشکەفتنا ٢٥,٠٠٠ دیناران)</span>
+          </div>
+          <ul class="plan-features">
+            <li data-i18n="plan_2_f1">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ٤ هەیڤێن تەمام یێن ڕاهێنانێ بێ سنوور
+            </li>
+            <li data-i18n="plan_2_f2">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              هەیڤا ٤ ب نیڤا بهایی: بتنێ ٢٥,٠٠٠ دینار
+            </li>
+            <li data-i18n="plan_2_f3">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              پڕۆگرامێ خۆراکی و سیستەمێ تایبەتێ کێشێ
+            </li>
+            <li data-i18n="plan_2_f4">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ١ ڤەخوارنا دایت یا خۆڕایی ژ دایت بارێ
+            </li>
+          </ul>
+          <a href="#register" class="btn btn-primary" style="width: 100%;" data-i18n="plan_2_btn">وەرگرتنا ڤێ ئۆفەرێ</a>
+        </div>
+
+        <!-- 6 Months VIP Plan -->
+        <div class="pricing-card">
+          <h3 class="plan-name" data-i18n="plan_3_name">پلانا ڤی ئای پی (٦ هەیڤ)</h3>
+          <p class="plan-desc" data-i18n="plan_3_desc">بۆ وەرزشڤانێن ڕژد و ئاستێ بلند دگەل هەمی خزمەتگوزاریێن زێدە.</p>
+          <div class="plan-price-wrap">
+            <span class="price-amount">260,000</span>
+            <span class="price-currency" data-i18n="currency">دینار</span>
+            <span class="price-period" data-i18n="plan_3_period">بۆ دەمێ ٦ هەیڤان</span>
+          </div>
+          <ul class="plan-features">
+            <li data-i18n="plan_3_f1">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              ڕاهێنەرێ تایبەت (Personal Trainer)
+            </li>
+            <li data-i18n="plan_3_f2">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              سۆنا و جاکوزی و لۆکەرێ تایبەت
+            </li>
+            <li data-i18n="plan_3_f3">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+              داشکاندنا ١٥٪ ل سەر هەمی ڤەخوارنان
+            </li>
+          </ul>
+          <a href="#register" class="btn btn-outline" style="width: 100%;" data-i18n="plan_3_btn">ناڤنڤیسین د ڤێ پلانێ دا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DIET & HEALTHY BAR MENU ==================== -->
+  <section id="diet-bar" class="shake-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-clean" data-i18n="diet_badge">🥗 بارێ دایت و تەندروستیێ (Diet & Healthy Bar)</span>
+        <h2 data-i18n="diet_title">مێنیویا <span class="text-primary">تشتێن دایت و ڤەخوارنێن دایت</span></h2>
+        <p data-i18n="diet_subtitle">باشترین و تامخۆشترین ڤەخوارن و ژەمێن تەندروست ب سیفڕ شەکر، کێمترین کالۆری و پرۆتینێ بەرز بۆ دابەزاندنا کێشێ و لەشەکێ ڕێک</p>
+      </div>
+
+      <div id="shakeMenuGrid" class="shake-grid">
+        <!-- Loaded dynamically from app.js based on language -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MEMBER REGISTRATION FORM ==================== -->
+  <section id="register" class="register-section">
+    <div class="container">
+      <div class="register-card">
+        <div class="section-header" style="margin-bottom: 1rem;">
+          <span class="badge badge-spray" data-i18n="reg_badge">تۆماربوون د سیستەمی دا</span>
+          <h2 data-i18n="reg_title">فۆڕما <span class="text-primary">ناڤنڤیسینێ</span></h2>
+          <p><span data-i18n="reg_subtitle">ب کێمتر ژ خولەکەکێ ناڤێ خۆ تۆمار بکە یان پەیوەندیێ ب ژمارا</span> <a href="tel:07509908866" dir="ltr" style="color: var(--accent-cyan); font-weight: bold; text-decoration: none;">0750 990 8866</a> بکە</p>
+        </div>
+
+        <div id="registerSuccessAlert" class="form-alert"></div>
+
+        <form id="memberRegisterForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="regName" data-i18n="reg_name_label">ناڤێ سیانی:</label>
+              <input type="text" id="regName" class="form-control" placeholder="بۆ نموونە: کاروان ئەحمەد دهۆکی" required>
+            </div>
+
+            <div class="form-group">
+              <label for="regPhone" data-i18n="reg_phone_label">ژمارا تەلەفۆنێ:</label>
+              <input type="tel" id="regPhone" class="form-control" placeholder="0750 000 0000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="regPlan" data-i18n="reg_plan_label">جۆرێ بەشداریێ:</label>
+              <select id="regPlan" class="form-control">
+                <option value="special-3m">ئۆفەرا تایبەت (٣ هەیڤ + هەیڤا ٤ ب ٢٥,٠٠٠ دیناران) - ١٧٥,٠٠٠ دینار</option>
+                <option value="monthly">بەشداریا هەیڤانە یا ئاسایی - ٣٠,٠٠٠ دینار</option>
+                <option value="vip-6m">پلانا ڤی ئای پی (٦ هەیڤ) - ٢٦٠,٠٠٠ دینار</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="regShift" data-i18n="reg_shift_label">دەوام / شیفت (دەمی هەلبژێرە):</label>
+              <select id="regShift" class="form-control" required>
+                <option value="women">🌸 دەواما ئافرەتان (٠٦:٠٠ سپێدێ - ٠٢:٠٠ نیڤڕۆ)</option>
+                <option value="men" selected>⚡ دەواما زەلامان (٠٣:٠٠ ئێڤاری - ١١:٠٠ شەڤێ)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="regEmergency" data-i18n="reg_emergency_label">ژمارا کەسەکێ نێزیک (کاتی پێتڤی):</label>
+              <input type="tel" id="regEmergency" class="form-control" placeholder="0750 000 0000">
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.05rem;" data-i18n="reg_submit_btn">
+                تۆمارکرنا ئەندامیەتێ د هۆلا بلۆ جیم دا 🚀
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div class="brand">
+          <div class="brand-logo">BG</div>
+          <div class="brand-text">
+            <h3>BLUE GYM</h3>
+            <span data-i18n="brand_tagline">هۆلا وەرزشی یا بلۆ • بادینان</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.5rem; font-size: 0.9rem;">
+          <a href="#hero" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_home">دەستپێک</a>
+          <a href="#services" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_services">خزمەتگوزاری</a>
+          <a href="#schedule" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_schedule">دەمێن دەوامی</a>
+          <a href="#pricing" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_pricing">بها و ئۆفەر</a>
+          <a href="#diet-bar" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_diet">مێنیویا دایت</a>
+          <a href="admin.html" style="color: var(--primary-light); text-decoration: none; font-weight: bold;" data-i18n="nav_admin">پانێلا ڕێڤەبەریێ (Admin CMS)</a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem;">
+            <span style="color: var(--text-dim);" data-i18n="contact_label">پەیوەندی و واتسئەپ:</span>
+            <a href="tel:07509908866" dir="ltr" style="color: var(--primary-light); text-decoration: none; font-weight: 800; font-size: 1.05rem;">
+              0750 990 8866
+            </a>
+          </div>
+          <a href="https://wa.me/9647509908866" target="_blank" class="btn btn-clean btn-sm" style="padding: 0.35rem 0.8rem;">
+            واتسئەپ (WhatsApp)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-i18n="footer_text">
+        هەمی ماف پاراستینە بۆ هۆلا بلۆ جیم © 2026 | ژمارا تەلەفۆنێ: 0750 990 8866 | دیزاین کرایە ب ڕەنگێ سەرەکی #3784AB
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js?v=5"></script>
+</body>
+</html>

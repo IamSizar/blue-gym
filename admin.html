@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="admin_page_title">پانێلا کارگێریێ | Blue Gym CMS Admin</title>
+  <link rel="preload" href="fonts/Kurdfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body style="background: var(--bg-dark);">
+
+  <div class="admin-layout">
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="admin-sidebar">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">BG</div>
+        <div class="brand-text">
+          <h2 style="font-size: 1.2rem; color: #fff;">BLUE GYM</h2>
+          <span data-i18n="admin_brand_subtitle">سیستەمێ کارگێریێ (CMS)</span>
+          <span style="display:block; font-size:0.75rem; color:var(--text-muted); margin-top:2px;" dir="ltr">📞 0750 990 8866</span>
+        </div>
+      </a>
+
+      <nav class="admin-nav">
+        <a href="#overview" class="admin-nav-item active" data-tab="overview">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+          <span data-i18n="admin_nav_overview">تەماشایا گشتی (Dashboard)</span>
+        </a>
+        <a href="#members" class="admin-nav-item" data-tab="members">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>
+          <span data-i18n="admin_nav_members">بڕێڤەبرنا ئەندامان</span>
+        </a>
+        <a href="#pricing-cms" class="admin-nav-item" data-tab="pricing-cms">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/></svg>
+          <span data-i18n="admin_nav_pricing">دەستکاریا بها و ئۆفەران</span>
+        </a>
+        <a href="#shakes-cms" class="admin-nav-item" data-tab="shakes-cms">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm1.5 3.5a.5.5 0 0 0-.5.5v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a.5.5 0 0 0-.5-.5h-11z"/></svg>
+          <span data-i18n="admin_nav_diet">مێنیویا خۆراک و ڤەخوارنێن دایت</span>
+        </a>
+        <a href="#media-cms" class="admin-nav-item" data-tab="media-cms">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/><path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/></svg>
+          <span data-i18n="admin_nav_media">بارکرنا وێنەیان (Media)</span>
+        </a>
+      </nav>
+
+      <div style="margin-top: auto;">
+        <a href="index.html" class="btn btn-outline btn-sm" style="width: 100%;" data-i18n="admin_back_home">
+          ← زڤڕین بۆ مالپەڕێ سەرەکی
+        </a>
+      </div>
+    </aside>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="admin-main">
+      <!-- Top header bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2><span data-i18n="admin_header_title_pre">پانێلا کارگێریێ یا</span> <span class="text-primary">بلۆ جیم</span></h2>
+          <p class="text-muted" data-i18n="admin_header_subtitle">ڕێڤەبرنا بەشداربوویان، گوهۆڕینا بهایان، ئۆفەرا هەیڤا ٤ و بەڕێوەبرنا ناڤەڕۆکێ</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div class="lang-switcher" id="adminLangSwitcher">
+            <button type="button" class="lang-btn active" data-lang="ku">بادینی</button>
+            <button type="button" class="lang-btn" data-lang="ar">عربي</button>
+          </div>
+          <button id="exportDataBtn" class="btn btn-outline btn-sm" data-i18n="admin_export_btn">داگرتنا لیستا ئەندامان (JSON/Backup)</button>
+        </div>
+      </div>
+
+      <!-- KPI Metrics -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-title" data-i18n="admin_kpi_members">ئەندامێن بەشداربووی</div>
+          <div class="kpi-value text-primary" id="kpiTotalMembers">0</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title" data-i18n="admin_kpi_revenue">داهاتێ گشتی یێ پێشبینیکری</div>
+          <div class="kpi-value text-gold" id="kpiEstimatedRevenue">0 دینار</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title" data-i18n="admin_kpi_price">بهایێ هەیڤانە یێ چالاک</div>
+          <div class="kpi-value text-cyan" id="kpiActivePrice">30,000 دینار</div>
+        </div>
+      </div>
+
+      <!-- Toast Notification Alert -->
+      <div id="adminToast" class="form-alert success" style="display: none;"></div>
+
+      <!-- SECTION 1: PRICE & OFFER CMS -->
+      <div class="admin-card" id="pricing-section">
+        <div class="admin-card-header">
+          <h3 data-i18n="admin_pricing_title">دەستکاریکردنا بهایێن هۆلێ و ئۆفەرا هەیڤانە</h3>
+          <span class="badge badge-spray">CMS Pricing & Offer</span>
+        </div>
+        <form id="priceOfferForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cmsMonthlyFee" data-i18n="admin_label_monthly">بهایێ بەشداریا هەیڤانە (دینارێن عیراقی):</label>
+              <input type="number" id="cmsMonthlyFee" class="form-control" value="30000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cmsOfferFee" data-i18n="admin_label_offer">بهایێ هەیڤا چوارێ د ئۆفەرا تایبەت دا (دینار):</label>
+              <input type="number" id="cmsOfferFee" class="form-control" value="25000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cmsWomenShift" data-i18n="admin_label_women_shift">دەواما ئافرەتان (خانمان):</label>
+              <input type="text" id="cmsWomenShift" class="form-control" value="06:00 سپێدێ - 02:00 نیڤڕۆ" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cmsMenShift" data-i18n="admin_label_men_shift">دەواما زەلامان (پیاوان):</label>
+              <input type="text" id="cmsMenShift" class="form-control" value="03:00 ئێڤاری - 11:00 شەڤێ" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="cmsOfferTitle" data-i18n="admin_label_offer_title">سەردێڕێ ئۆفەرا تایبەت:</label>
+              <input type="text" id="cmsOfferTitle" class="form-control" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="cmsOfferDesc" data-i18n="admin_label_offer_desc">شڕۆڤەکرنا ئۆفەرێ بۆ بەشداربوویان:</label>
+              <textarea id="cmsOfferDesc" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-primary" data-i18n="admin_btn_save_pricing">
+                پاشکەفتنا گوهۆڕینان و نیشاندان ل سەر مالپەڕی 💾
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- SECTION 2: MEMBER MANAGEMENT -->
+      <div class="admin-card" id="members-section">
+        <div class="admin-card-header">
+          <h3 data-i18n="admin_members_title">لیستا ناڤنڤیسینێن ئەندامان</h3>
+          <div style="display: flex; gap: 0.75rem;">
+            <input type="text" id="memberSearchInput" class="form-control" placeholder="لێگەڕیان ب ناڤ یان تەلەفۆن..." style="width: 250px; padding: 0.45rem 0.85rem; font-size: 0.85rem;">
+            <button id="refreshMembersBtn" class="btn btn-outline btn-sm" data-i18n="admin_btn_refresh">نویژەنکرن</button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th data-i18n="th_code">کۆد</th>
+                <th data-i18n="th_name">ناڤێ سیانی</th>
+                <th data-i18n="th_phone">ژمارا تەلەفۆنێ</th>
+                <th data-i18n="th_shift">دەوام / شیفت</th>
+                <th data-i18n="th_plan">پلان</th>
+                <th data-i18n="th_reg_date">ڕۆژا ناڤنڤیسینێ</th>
+                <th data-i18n="th_status">دۆخ</th>
+                <th data-i18n="th_actions">کردار</th>
+              </tr>
+            </thead>
+            <tbody id="memberTableBody">
+              <!-- Rendered via js/admin.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SECTION 3: MEDIA & BANNER UPLOADER -->
+      <div class="admin-card" id="media-section">
+        <div class="admin-card-header">
+          <h3 data-i18n="admin_media_title">بارکرنا وێنەیێن هۆلێ و دیزاینێن نوی (Media Upload)</h3>
+          <span class="badge badge-clean" data-i18n="admin_media_badge">وێنەیێن چالاک</span>
+        </div>
+        <p class="text-muted" style="margin-bottom: 1.5rem;" data-i18n="admin_media_desc">
+          هین دشێن وێنەیێن تایبەت ب هۆلا بلۆ جیم، ئامیرێن نوی، و پۆستەرێن ڕیکلامێ بار بکەن. وێنە دێ ل سیستەمی دا هێنە پاراستن.
+        </p>
+
+        <div class="dropzone" id="mediaDropzone">
+          <input type="file" id="mediaFileInput" accept="image/*" multiple style="display: none;">
+          <svg width="48" height="48" fill="var(--primary-light)" viewBox="0 0 16 16" style="margin-bottom: 0.75rem;">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+          </svg>
+          <h4 style="margin-bottom: 0.35rem;" data-i18n="admin_dropzone_title">وێنەی ڕابکێشە ڤێرێ یان کلیک بکە بۆ هەلبژارتنێ</h4>
+          <p class="text-dim" style="font-size: 0.85rem;" data-i18n="admin_dropzone_note">(PNG, JPG, WEBP - پەسەندکراو بۆ وێنەیێن هۆلێ)</p>
+        </div>
+
+        <div class="image-preview-grid" id="uploadedImagesGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
